@@ -44,6 +44,7 @@ radius = 6.08276
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(-11, -11)
+collision_layer = 2
 script = ExtResource("1_n60wh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

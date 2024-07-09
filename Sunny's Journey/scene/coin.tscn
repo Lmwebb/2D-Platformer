@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://cs5hrifebhbmx"]
+[gd_scene load_steps=17 format=3 uid="uid://cs5hrifebhbmx"]
 
 [ext_resource type="Texture2D" uid="uid://bv2jpncovpw1k" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/coin_.png" id="1_jro17"]
+[ext_resource type="Script" path="res://scripts/coin.cs" id="1_ykch5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mmu2f"]
 atlas = ExtResource("1_jro17")
@@ -98,6 +99,8 @@ animations = [{
 radius = 4.0
 
 [node name="Coin" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_ykch5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_7db30")
@@ -107,3 +110,5 @@ frame_progress = 0.784783
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_xox02")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
