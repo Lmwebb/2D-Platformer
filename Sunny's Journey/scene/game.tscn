@@ -9,6 +9,7 @@
 
 [ext_resource type="PackedScene" path="res://scene/platform.tscn" id="7_0vsho"]
 [ext_resource type="PackedScene" path="res://scene/coin.tscn" id="8_2hfn7"]
+[ext_resource type="PackedScene" uid="uid://dvtv80v66cbj8" path="res://scene/killzone.tscn" id="9_tlcn0"]
 [ext_resource type="Script" path="res://scripts/coin.cs" id="9_58ame"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hm0du"]
