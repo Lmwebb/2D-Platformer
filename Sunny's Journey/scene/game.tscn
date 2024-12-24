@@ -3442,6 +3442,21 @@ sources/2 = SubResource("TileSetAtlasSource_2ps22")
 sources/3 = SubResource("TileSetAtlasSource_o8we8")
 sources/4 = SubResource("TileSetAtlasSource_v1il4")
 
+[sub_resource type="Animation" id="Animation_rt8fy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(629, -11)]
+}
+
 [sub_resource type="Animation" id="Animation_52kjy"]
 resource_name = "move"
 length = 2.0
@@ -3457,21 +3472,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(629, -11), Vector2(629, -169)]
-}
-
-[sub_resource type="Animation" id="Animation_rt8fy"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(629, -11)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r3ago"]
