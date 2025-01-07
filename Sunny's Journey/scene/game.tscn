@@ -6,11 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://c73apcwxl0ncy" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/winter_.png" id="4_mmwtf"]
 [ext_resource type="Texture2D" uid="uid://b37f8ancra6bs" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/autumn_.png" id="5_vvqqk"]
 [ext_resource type="Texture2D" uid="uid://c8l67q35gid5r" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/staticObjects_.png" id="6_q2h37"]
-
-[ext_resource type="PackedScene" path="res://scene/platform.tscn" id="7_0vsho"]
-[ext_resource type="PackedScene" path="res://scene/coin.tscn" id="8_2hfn7"]
+[ext_resource type="PackedScene" uid="uid://bdd6ji3bqvq2g" path="res://scene/platform.tscn" id="7_0vsho"]
+[ext_resource type="PackedScene" uid="uid://cs5hrifebhbmx" path="res://scene/coin.tscn" id="8_2hfn7"]
 [ext_resource type="PackedScene" uid="uid://dvtv80v66cbj8" path="res://scene/killzone.tscn" id="9_tlcn0"]
-[ext_resource type="Script" path="res://scripts/coin.cs" id="9_58ame"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hm0du"]
 texture = ExtResource("2_y0vp8")
