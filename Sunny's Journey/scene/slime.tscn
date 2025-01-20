@@ -50,7 +50,7 @@ script = ExtResource("1_rrcny")
 position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_cnosh")
 autoplay = "default"
-frame_progress = 0.875983
+frame_progress = 0.600001
 flip_h = true
 
 [node name="Killzone" parent="." instance=ExtResource("2_lc1gv")]
