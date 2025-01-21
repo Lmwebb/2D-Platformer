@@ -11,7 +11,6 @@ public partial class coin : Area2D
 		_GameManager = GetNode<game_manager>("%GameManager");
 	}
 	
-	
 	public void _on_body_entered(Node2D body)
 	{
 		_GameManager.add_point();
