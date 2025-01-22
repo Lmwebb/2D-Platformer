@@ -46,6 +46,4 @@ public partial class world_select : Control
 	public override void _Process(double delta)
 	{
 	}
-	
-	
 }
