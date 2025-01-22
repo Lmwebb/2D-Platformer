@@ -4,38 +4,41 @@ using System.Collections.Generic;
 
 public partial class level_select : Control
 {
+	private List<Node> levels;
 	private TextureRect _PlayerIcon;
-	public level_icon _CurrentLevel;
-	public int current_world = 0;
+	public int current_level = 0;
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		levels = new List<Node>();
 		_PlayerIcon = GetNode<TextureRect>("PlayerIcon");
-		_CurrentLevel = GetNode<level_icon>(level_name);
-		_PlayerIcon.GlobalPosition = _CurrentLevel.GlobalPosition;
 		
+		foreach (Node child in GetChildren()) {
+			if (!(child is TextureRect)) {
+				levels.Add(child);
+				
+			}
+		}
+		
+		_PlayerIcon.GlobalPosition = ((Control)levels[current_level]).GlobalPosition;
+		
+		GD.Print("Total LevelIcons added: " + levels.Count);
+		foreach (Node level in levels)
+		{
+			GD.Print("LevelIcon: " + level.Name); // Print the name of each LevelIcon
+		}
 	}
 	
 	public void _input(InputEvent @event) {
-		if (Input.IsActionPressed("ui_left") && _CurrentLevel._NextLevelLeft != null) {
-			_CurrentLevel = _CurrentLevel._NextLevelLeft as level_icon;
-			_PlayerIcon.GlobalPosition = _CurrentLevel.GlobalPosition;
+		if (Input.IsActionPressed("ui_left") && current_level > 0) {
+			current_level -= 1;
+			_PlayerIcon.GlobalPosition = ((Control)levels[current_level]).GlobalPosition;
 		}
 		
-		if (Input.IsActionPressed("ui_right") && _CurrentLevel._NextLevelRight != null) {
-			_CurrentLevel =  _CurrentLevel._NextLevelRight as level_icon;
-			_PlayerIcon.GlobalPosition = _CurrentLevel.GlobalPosition;
-		}
-		
-		if (Input.IsActionPressed("ui_up") && _CurrentLevel._NextLevelUp != null) {
-			_CurrentLevel = _CurrentLevel._NextLevelUp as level_icon;
-			_PlayerIcon.GlobalPosition = _CurrentLevel.GlobalPosition;
-		}
-		
-		if (Input.IsActionPressed("ui_down") && _CurrentLevel._NextLevelDown != null) {
-			_CurrentLevel = _CurrentLevel._NextLevelDown as level_icon;
-			_PlayerIcon.GlobalPosition = _CurrentLevel.GlobalPosition;
+		if (Input.IsActionPressed("ui_right") && current_level < levels.Count - 1) {
+			current_level += 1;
+			_PlayerIcon.GlobalPosition = ((Control)levels[current_level]).GlobalPosition;
 		}
 	}
 		

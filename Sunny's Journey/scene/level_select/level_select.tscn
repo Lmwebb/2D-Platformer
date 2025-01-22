@@ -17,33 +17,26 @@ offset_top = 256.0
 offset_right = 192.0
 offset_bottom = 320.0
 
-[node name="1B" parent="." instance=ExtResource("1_1t01s")]
-offset_left = 128.0
-offset_top = 64.0
-offset_right = 192.0
-offset_bottom = 128.0
-level_name = "1B"
-
 [node name="2" parent="." instance=ExtResource("1_1t01s")]
 offset_left = 384.0
 offset_top = 192.0
 offset_right = 448.0
 offset_bottom = 256.0
-level_name = "2"
-
-[node name="PlayerIcon" parent="." instance=ExtResource("3_1duxp")]
-layout_mode = 0
+level_index = 2
 
 [node name="3" parent="." instance=ExtResource("1_1t01s")]
 offset_left = 576.0
 offset_top = 320.0
 offset_right = 640.0
 offset_bottom = 384.0
-level_name = "3"
+level_index = 3
 
 [node name="4" parent="." instance=ExtResource("1_1t01s")]
 offset_left = 768.0
 offset_top = 192.0
 offset_right = 832.0
 offset_bottom = 256.0
-level_name = "4"
+level_index = 4
+
+[node name="PlayerIcon" parent="." instance=ExtResource("3_1duxp")]
+layout_mode = 0

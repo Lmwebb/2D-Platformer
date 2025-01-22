@@ -25,7 +25,7 @@ offset_top = -8.0
 offset_right = 51.0
 theme_override_fonts/font = ExtResource("2_vg7uk")
 theme_override_font_sizes/font_size = 8
-text = "World 1"
+text = "Level 1"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
