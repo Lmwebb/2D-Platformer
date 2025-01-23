@@ -12,30 +12,30 @@ offset_bottom = 40.0
 script = ExtResource("1_5tjnb")
 
 [node name="1" parent="." instance=ExtResource("1_1t01s")]
-offset_left = 128.0
+offset_left = 192.0
 offset_top = 256.0
-offset_right = 192.0
+offset_right = 256.0
 offset_bottom = 320.0
 
 [node name="2" parent="." instance=ExtResource("1_1t01s")]
-offset_left = 384.0
-offset_top = 192.0
-offset_right = 448.0
-offset_bottom = 256.0
+offset_left = 448.0
+offset_top = 392.0
+offset_right = 512.0
+offset_bottom = 456.0
 level_index = 2
 
 [node name="3" parent="." instance=ExtResource("1_1t01s")]
-offset_left = 576.0
-offset_top = 320.0
-offset_right = 640.0
-offset_bottom = 384.0
+offset_left = 704.0
+offset_top = 192.0
+offset_right = 768.0
+offset_bottom = 256.0
 level_index = 3
 
 [node name="4" parent="." instance=ExtResource("1_1t01s")]
-offset_left = 768.0
-offset_top = 192.0
-offset_right = 832.0
-offset_bottom = 256.0
+offset_left = 960.0
+offset_top = 320.0
+offset_right = 1024.0
+offset_bottom = 384.0
 level_index = 4
 
 [node name="PlayerIcon" parent="." instance=ExtResource("3_1duxp")]

@@ -40,6 +40,20 @@ public partial class world_select : Control
 			current_world += 1;
 			_PlayerIcon.GlobalPosition = ((Control)worlds[current_world]).GlobalPosition;
 		}
+		
+		if (Input.IsActionPressed("ui_accept")) {
+			
+			var _WorldIcon = (world_icon)worlds[current_world];
+			var _WorldSelectScene = _WorldIcon._LevelSelectScene as level_select;
+			_WorldSelectScene._ParentWorldSelect = this;
+			
+			if (_WorldIcon._LevelSelectScene != null && current_world == 0) {
+				
+				GetTree().Root.AddChild(_WorldIcon._LevelSelectScene);
+				GetTree().CurrentScene = _WorldIcon._LevelSelectScene;
+				GetTree().Root.RemoveChild(this);
+			}
+		}
 	}
 		
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
