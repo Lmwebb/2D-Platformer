@@ -6,9 +6,10 @@ public partial class level_select : Control
 {
 	private List<Node> levels;
 	private TextureRect _PlayerIcon;
+	 private Tween _MoveTween;
+	
 	public int current_level = 0;
 	public Node _ParentWorldSelect;
-	
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -16,6 +17,7 @@ public partial class level_select : Control
 		
 		levels = new List<Node>();
 		_PlayerIcon = GetNode<TextureRect>("PlayerIcon");
+		
 		
 		foreach (Node child in GetChildren()) {
 			if (!(child is TextureRect)) {
@@ -28,14 +30,16 @@ public partial class level_select : Control
 	}
 	
 	public void _input(InputEvent @event) {
+		
+		
 		if (Input.IsActionPressed("ui_left") && current_level > 0) {
 			current_level -= 1;
-			_PlayerIcon.GlobalPosition = ((Control)levels[current_level]).GlobalPosition;
+			tween_icon();
 		}
 		
 		if (Input.IsActionPressed("ui_right") && current_level < levels.Count - 1) {
 			current_level += 1;
-			_PlayerIcon.GlobalPosition = ((Control)levels[current_level]).GlobalPosition;
+			tween_icon();
 		}
 		
 		if (Input.IsActionPressed("ui_cancel")) {
@@ -48,10 +52,13 @@ public partial class level_select : Control
 				GetTree().ChangeSceneToFile("res://scene/game.tscn");
 			}
 		}
+		
 	}
 		
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
+	public void tween_icon() {
+		
+		
+		_MoveTween = GetTree().CreateTween();
+		_MoveTween.TweenProperty(_PlayerIcon, "global_position", ((Control)levels[current_level]).GlobalPosition, 0.5).SetTrans(Tween.TransitionType.Sine);
 	}
 }
