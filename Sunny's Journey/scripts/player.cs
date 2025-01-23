@@ -10,11 +10,13 @@ public partial class player : CharacterBody2D
 	public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
 	
 	private AnimatedSprite2D animatedSprite;
+	private AudioStreamPlayer jumpEffect;
 	
 	public override void _Ready()
 	{
 		// Get the AnimatedSprite2D node
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+		jumpEffect = GetNode<AudioStreamPlayer>("jumpSound");
 	}
 	
 	public override void _PhysicsProcess(double delta)
@@ -22,12 +24,16 @@ public partial class player : CharacterBody2D
 		Vector2 velocity = Velocity;
 
 		// Add the gravity.
-		if (!IsOnFloor())
+		if (!IsOnFloor()) {
 			velocity.Y += gravity * (float)delta;
+		}
 
 		// Handles Jump.
-		if (Input.IsActionJustPressed("jump") && IsOnFloor())
+		if (Input.IsActionJustPressed("jump") && IsOnFloor()) {
+			jumpEffect.Play();
 			velocity.Y = JumpVelocity;
+		}
+			
 
 		// Reads the input of the user 
 		Vector2 direction = Input.GetVector("move_left", "move_right", "ui_up", "ui_down");

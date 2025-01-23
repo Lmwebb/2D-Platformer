@@ -25,12 +25,6 @@ public partial class level_select : Control
 		}
 		
 		_PlayerIcon.GlobalPosition = ((Control)levels[current_level]).GlobalPosition;
-		
-		GD.Print("Total LevelIcons added: " + levels.Count);
-		foreach (Node level in levels)
-		{
-			GD.Print("LevelIcon: " + level.Name); // Print the name of each LevelIcon
-		}
 	}
 	
 	public void _input(InputEvent @event) {

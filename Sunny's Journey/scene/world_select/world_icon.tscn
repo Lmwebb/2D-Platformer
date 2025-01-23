@@ -1,11 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://dd4c1jhbhmtdp"]
+[gd_scene load_steps=6 format=3 uid="uid://dd4c1jhbhmtdp"]
 
 [ext_resource type="Script" path="res://scripts/world_icon.cs" id="1_3dlap"]
 [ext_resource type="FontFile" uid="uid://cvibg8mnd3ail" path="res://assets/brackeys_platformer_assets (1)/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="1_hxuxv"]
+[ext_resource type="PackedScene" uid="uid://dkemc42fjstbc" path="res://scene/level_select/level_select.tscn" id="2_wqruj"]
 
 [sub_resource type="Gradient" id="Gradient_2jbyg"]
-offsets = PackedFloat32Array(0.993506)
-colors = PackedColorArray(0, 0, 0, 1)
+offsets = PackedFloat32Array(0.512987)
+colors = PackedColorArray(0.482025, 0.298169, 0.246563, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_fonw3"]
 gradient = SubResource("Gradient_2jbyg")
@@ -18,17 +19,24 @@ offset_right = 64.0
 offset_bottom = 64.0
 pivot_offset = Vector2(32, 32)
 script = ExtResource("1_3dlap")
+_LevelSelectPacked = ExtResource("2_wqruj")
 
 [node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_top = -8.0
-offset_right = 51.0
+offset_left = -80.0
+offset_top = -32.0
+offset_right = -29.0
+offset_bottom = -24.0
 theme_override_fonts/font = ExtResource("1_hxuxv")
 theme_override_font_sizes/font_size = 8
 text = "World 1"
 
 [node name="TextureRect" type="TextureRect" parent="."]
+visible = false
 layout_mode = 0
+offset_top = 55.0
 offset_right = 64.0
-offset_bottom = 64.0
+offset_bottom = 56.0
+pivot_offset = Vector2(32, 32)
 texture = SubResource("GradientTexture1D_fonw3")

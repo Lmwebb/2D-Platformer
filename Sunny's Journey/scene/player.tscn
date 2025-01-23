@@ -1,7 +1,8 @@
-[gd_scene load_steps=30 format=3 uid="uid://dlnktxsg313h3"]
+[gd_scene load_steps=31 format=3 uid="uid://dlnktxsg313h3"]
 
 [ext_resource type="Script" path="res://scripts/player.cs" id="1_n60wh"]
 [ext_resource type="Texture2D" uid="uid://7q8b0635ui82" path="res://assets/camelot_ [version 1.0]/lancelot_.png" id="1_t17r0"]
+[ext_resource type="AudioStream" uid="uid://cvstv5cgnwfhl" path="res://assets/features/sounds/jump.wav" id="3_p1178"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_641od"]
 atlas = ExtResource("1_t17r0")
@@ -203,6 +204,10 @@ radius = 6.08276
 position = Vector2(-11, -11)
 collision_layer = 2
 script = ExtResource("1_n60wh")
+
+[node name="jumpSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_p1178")
+bus = &"SFX"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -4)

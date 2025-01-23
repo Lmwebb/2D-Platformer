@@ -15,7 +15,7 @@ public partial class world_select : Control
 		_PlayerIcon = GetNode<TextureRect>("PlayerIcon");
 		
 		foreach (Node child in GetChildren()) {
-			if (!(child is TextureRect)) {
+			if (!(child is TextureRect) && !(child is TileMap)) {
 				worlds.Add(child);
 				
 			}
@@ -23,11 +23,6 @@ public partial class world_select : Control
 		
 		_PlayerIcon.GlobalPosition = ((Control)worlds[current_world]).GlobalPosition;
 		
-		GD.Print("Total WorldIcons added: " + worlds.Count);
-		foreach (Node world in worlds)
-		{
-			GD.Print("WorldIcon: " + world.Name); // Print the name of each WorldIcon
-		}
 	}
 	
 	public void _input(InputEvent @event) {

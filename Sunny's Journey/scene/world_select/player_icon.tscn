@@ -1,9 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://rruecwmnwhqa"]
 
-[ext_resource type="Texture2D" uid="uid://c5c6wtw0k50mr" path="res://assets/Sprites [Enemies]/Balloon/Balloon_1/Explode/Explode_F_1.png" id="1_1hlov"]
+[ext_resource type="Texture2D" uid="uid://7q8b0635ui82" path="res://assets/camelot_ [version 1.0]/lancelot_.png" id="1_tuyxj"]
 
 [node name="PlayerIcon" type="TextureRect"]
-offset_right = 64.0
-offset_bottom = 64.0
+offset_right = 32.0
+offset_bottom = 40.0
 pivot_offset = Vector2(32, 32)
-texture = ExtResource("1_1hlov")
+texture = ExtResource("1_tuyxj")
+expand_mode = 1
+stretch_mode = 1
