@@ -34,12 +34,12 @@ public partial class level_select : Control
 		
 		if (Input.IsActionPressed("ui_left") && current_level > 0) {
 			current_level -= 1;
-			tween_icon();
+			_PlayerIcon.GlobalPosition = ((Control)levels[current_level]).GlobalPosition;
 		}
 		
 		if (Input.IsActionPressed("ui_right") && current_level < levels.Count - 1) {
 			current_level += 1;
-			tween_icon();
+			_PlayerIcon.GlobalPosition = ((Control)levels[current_level]).GlobalPosition;
 		}
 		
 		if (Input.IsActionPressed("ui_cancel")) {
@@ -54,11 +54,5 @@ public partial class level_select : Control
 		}
 		
 	}
-		
-	public void tween_icon() {
-		
-		
-		_MoveTween = GetTree().CreateTween();
-		_MoveTween.TweenProperty(_PlayerIcon, "global_position", ((Control)levels[current_level]).GlobalPosition, 0.5).SetTrans(Tween.TransitionType.Sine);
-	}
+	
 }

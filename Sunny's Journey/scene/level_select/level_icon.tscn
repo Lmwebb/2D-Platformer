@@ -1,15 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bso6nb5rkig3h"]
+[gd_scene load_steps=3 format=3 uid="uid://bso6nb5rkig3h"]
 
 [ext_resource type="Script" path="res://scripts/level_icon.cs" id="1_g0m5g"]
 [ext_resource type="FontFile" uid="uid://cvibg8mnd3ail" path="res://assets/brackeys_platformer_assets (1)/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="2_vg7uk"]
-
-[sub_resource type="Gradient" id="Gradient_2jbyg"]
-offsets = PackedFloat32Array(0.993506)
-colors = PackedColorArray(0, 0, 0, 1)
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_fonw3"]
-gradient = SubResource("Gradient_2jbyg")
-width = 64
 
 [node name="LevelIcon" type="Control"]
 layout_mode = 3
@@ -21,14 +13,24 @@ script = ExtResource("1_g0m5g")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_top = -8.0
-offset_right = 51.0
+offset_left = -80.0
+offset_top = -40.0
+offset_right = -29.0
+offset_bottom = -32.0
 theme_override_fonts/font = ExtResource("2_vg7uk")
 theme_override_font_sizes/font_size = 8
 text = "Level 1"
 
 [node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 64.0
-offset_bottom = 64.0
-texture = SubResource("GradientTexture1D_fonw3")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
