@@ -16,6 +16,13 @@ public partial class game_manager : Node
 	public void add_point() {
 		score += 1;
 		_ScoreLabel.Text = "You collected " + score + " coins.";
+		end_game();
+	}
+	
+	public void end_game() {
+		if (score == 7) {
+			GetTree().ChangeSceneToFile("res://scene/level_select/level_select.tscn");
+		}
 	}
 }
 

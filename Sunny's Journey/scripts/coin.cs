@@ -17,6 +17,8 @@ public partial class coin : Area2D
 	{
 		_GameManager.add_point();
 		_AnimationPlayer.Play("pickup");
+		
+		
 	}
 	
 }

@@ -6,9 +6,8 @@ public partial class level_select : Control
 {
 	private List<Node> levels;
 	private TextureRect _PlayerIcon;
-	 private Tween _MoveTween;
 	
-	public int current_level = 0;
+	public int current_level = 1;
 	public Node _ParentWorldSelect;
 	
 	// Called when the node enters the scene tree for the first time.
@@ -43,13 +42,15 @@ public partial class level_select : Control
 		}
 		
 		if (Input.IsActionPressed("ui_cancel")) {
-			GetTree().Root.AddChild(_ParentWorldSelect);
-			GetTree().Root.RemoveChild(this);
+			GetTree().ChangeSceneToFile("res://scene/world_select/world_select.tscn");
 		}
 		
-		if (Input.IsActionPressed("ui_accept")) {
-			if (current_level == 0) {
+		if (Input.IsActionPressed("ui_enter")) {
+			if (current_level == 1) {
 				GetTree().ChangeSceneToFile("res://scene/game.tscn");
+			}
+			if (current_level == 2) {
+				GetTree().ChangeSceneToFile("res://scene/levels/level_2.tscn");
 			}
 		}
 		
