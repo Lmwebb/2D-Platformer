@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5gjesww6fq4l"]
+
+[ext_resource type="Texture2D" uid="uid://lenyddk246hh" path="res://assets/brackeys_platformer_assets (1)/brackeys_platformer_assets/sprites/fruit.png" id="1_ctgye"]
+[ext_resource type="Script" path="res://scripts/fruit.cs" id="1_wms7b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t6pyf"]
+radius = 8.0
+
+[node name="fruit" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_wms7b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_t6pyf")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+texture = ExtResource("1_ctgye")
+expand_mode = 1
+stretch_mode = 1

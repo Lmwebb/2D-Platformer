@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dd4c1jhbhmtdp"]
+[gd_scene load_steps=5 format=3 uid="uid://dd4c1jhbhmtdp"]
 
 [ext_resource type="Script" path="res://scripts/world_icon.cs" id="1_3dlap"]
 [ext_resource type="FontFile" uid="uid://cvibg8mnd3ail" path="res://assets/brackeys_platformer_assets (1)/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="1_hxuxv"]
-[ext_resource type="PackedScene" uid="uid://dkemc42fjstbc" path="res://scene/level_select/level_select.tscn" id="2_wqruj"]
 
 [sub_resource type="Gradient" id="Gradient_2jbyg"]
 offsets = PackedFloat32Array(0.512987)
@@ -19,7 +18,6 @@ offset_right = 64.0
 offset_bottom = 64.0
 pivot_offset = Vector2(32, 32)
 script = ExtResource("1_3dlap")
-_LevelSelectPacked = ExtResource("2_wqruj")
 
 [node name="Label" type="Label" parent="."]
 modulate = Color(0, 0, 0, 1)
