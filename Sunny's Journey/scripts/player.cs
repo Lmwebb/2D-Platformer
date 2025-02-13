@@ -5,6 +5,7 @@ public partial class player : CharacterBody2D
 {
 	public const float Speed = 200.0f;
 	public const float JumpVelocity = -300.0f;
+	public bool check = false;
 	public int Jump = 0;
 
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -12,16 +13,26 @@ public partial class player : CharacterBody2D
 	
 	private AnimatedSprite2D animatedSprite;
 	private AudioStreamPlayer jumpEffect;
-	private Area2D doubleJump;
+	private fruit Fruit;
 	
 	public override void _Ready()
 	{
 		// Get the AnimatedSprite2D node
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		jumpEffect = GetNode<AudioStreamPlayer>("jumpSound");
-		doubleJump = GetNode<Area2D>("res://scene/fruit.tscn");
+		fruit fruitNode = GetNode<fruit>("/root/Level2/fruit");
+		
+		if (fruitNode != null) {
+			fruitNode.FruitCollected += OnFruitCollected;
+		}
 		
 	}
+	
+	private void OnFruitCollected() {
+		GD.Print("Fruit has been taken");
+		check = true;
+	}
+	
 	
 	public override void _PhysicsProcess(double delta)
 	{
@@ -37,20 +48,18 @@ public partial class player : CharacterBody2D
 		if (Input.IsActionJustPressed("jump") && IsOnFloor()) {
 			jumpEffect.Play();
 			velocity.Y = JumpVelocity;
-			if (Jump == 2) {
-				Jump = 0;
+			
+			if (Jump < 2 && check == true) {
+				Jump ++;
 			}
-			Jump ++;
 		}
 		
-		if (doubleJump == null && Input.IsActionJustPressed("jump")) {
-			GD.Print("test");
-			if (Jump < 2) {
-				GD.Print("Count: " + Jump);
+		if (check == true && Jump == 1) {
+			if (Input.IsActionJustPressed("jump")) {
 				jumpEffect.Play();
 				velocity.Y = JumpVelocity;
 			}
-			Jump ++;
+			
 		}
 		
 		

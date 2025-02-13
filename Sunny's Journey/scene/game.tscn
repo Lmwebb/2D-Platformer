@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bdd6ji3bqvq2g" path="res://scene/platform.tscn" id="7_0vsho"]
 [ext_resource type="PackedScene" uid="uid://cs5hrifebhbmx" path="res://scene/coin.tscn" id="8_2hfn7"]
 [ext_resource type="PackedScene" uid="uid://dvtv80v66cbj8" path="res://scene/killzone.tscn" id="9_tlcn0"]
-[ext_resource type="PackedScene" uid="uid://dhjelacyo14xp" path="res://scene/slime.tscn" id="10_ic7xa"]
+[ext_resource type="PackedScene" path="res://scene/slime.tscn" id="10_ic7xa"]
 [ext_resource type="FontFile" uid="uid://c04tbpxcd4lea" path="res://assets/brackeys_platformer_assets (1)/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="12_ng7wk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hm0du"]
