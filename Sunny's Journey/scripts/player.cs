@@ -14,22 +14,26 @@ public partial class player : CharacterBody2D
 	private AnimatedSprite2D animatedSprite;
 	private AudioStreamPlayer jumpEffect;
 	private fruit Fruit;
+	private Node fruitNode;
 	
 	public override void _Ready()
 	{
+		GD.Print("Read is running");
 		// Get the AnimatedSprite2D node
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		jumpEffect = GetNode<AudioStreamPlayer>("jumpSound");
-		fruit fruitNode = GetNode<fruit>("/root/Level2/fruit");
+		Node fruitNode = GetNode<Node>("/root/Level2/Fruits");
 		
-		if (fruitNode != null) {
-			fruitNode.FruitCollected += OnFruitCollected;
+		
+		foreach (Node child in fruitNode.GetChildren()) {
+			if (child is fruit fruitInstance) {
+				fruitInstance.FruitCollected += OnFruitCollected;
+			}
 		}
 		
 	}
 	
 	private void OnFruitCollected() {
-		GD.Print("Fruit has been taken");
 		check = true;
 	}
 	
@@ -48,18 +52,19 @@ public partial class player : CharacterBody2D
 		if (Input.IsActionJustPressed("jump") && IsOnFloor()) {
 			jumpEffect.Play();
 			velocity.Y = JumpVelocity;
+			Jump = 1;
 			
-			if (Jump < 2 && check == true) {
-				Jump ++;
-			}
 		}
 		
-		if (check == true && Jump == 1) {
-			if (Input.IsActionJustPressed("jump")) {
+		
+		
+		if (check == true && !IsOnFloor()) {
+			
+			if (Input.IsActionJustPressed("jump") && Jump == 1) {
 				jumpEffect.Play();
 				velocity.Y = JumpVelocity;
+				check = false;
 			}
-			
 		}
 		
 		
