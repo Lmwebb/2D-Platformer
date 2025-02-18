@@ -2076,10 +2076,10 @@ unique_name_in_owner = true
 script = ExtResource("1_ovqa7")
 
 [node name="ScoreLabel" type="Label" parent="GameManager"]
-offset_left = -280.0
-offset_top = -192.0
-offset_right = -168.0
-offset_bottom = -166.0
+offset_left = -272.0
+offset_top = -328.0
+offset_right = -160.0
+offset_bottom = -302.0
 theme_override_fonts/font = ExtResource("2_qiu4a")
 theme_override_font_sizes/font_size = 8
 text = "you collected X coins"
@@ -2179,6 +2179,8 @@ autoplay = "Move"
 
 [node name="Platform2" parent="Platforms" instance=ExtResource("12_ga0xc")]
 position = Vector2(-368, -248)
+
+[node name="Node" type="Node" parent="."]
 
 [connection signal="body_entered" from="Fruits/fruit" to="Fruits/fruit" method="_on_body_entered"]
 [connection signal="body_entered" from="Fruits/fruit2" to="Fruits/fruit2" method="_on_body_entered"]
