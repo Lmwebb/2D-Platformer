@@ -12,6 +12,7 @@ public partial class killzone : Area2D
 		_timer = GetNode<Timer>("Timer");
 	}
 	
+	// Registers the users entered the zone triggering the players death
 	private void _on_body_entered(Node2D body)
 	{
 		GD.Print("You died");
@@ -20,6 +21,7 @@ public partial class killzone : Area2D
 		_timer.Start();
 	}
 	
+	// Reloads the scene after the timer finishes
 	private void _on_timer_timeout()
 	{
 		Engine.TimeScale = 1;

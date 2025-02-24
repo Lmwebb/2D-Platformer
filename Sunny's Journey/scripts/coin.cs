@@ -13,6 +13,7 @@ public partial class coin : Area2D
 		_AnimationPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
 	}
 	
+	// Checks if a coin has been collected
 	public void _on_body_entered(Node2D body)
 	{
 		_GameManager.add_point();

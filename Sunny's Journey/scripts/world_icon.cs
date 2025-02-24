@@ -19,6 +19,7 @@ public partial class world_icon : Control
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		// Assigns the appropriate index to worlds
 		if (Engine.IsEditorHint()) {
 			_WorldLabel.Text = "World " + world_index;
 		}

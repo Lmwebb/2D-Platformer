@@ -18,18 +18,13 @@ public partial class player : CharacterBody2D
 	
 	public override void _Ready()
 	{
-		GD.Print("Read is running");
+
 		// Get the AnimatedSprite2D node
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		jumpEffect = GetNode<AudioStreamPlayer>("jumpSound");
 		
+		// Access the Fruits Node that holds all fruits in the scene
 		Node fruitNode = GetTree().CurrentScene.GetNode<Node>("Fruits");
-		
-		if (fruitNode == null) {
-			GD.Print("FruitNode is null");
-		}
-		
-		GD.Print(GetTree().CurrentScene.Name);
 		
 		foreach (Node child in fruitNode.GetChildren()) {
 			if (child is fruit fruitInstance) {
@@ -64,7 +59,7 @@ public partial class player : CharacterBody2D
 		}
 		
 		
-		
+		// Handles double jump
 		if (check == true && !IsOnFloor()) {
 			
 			if (Input.IsActionJustPressed("jump") && Jump == 1) {

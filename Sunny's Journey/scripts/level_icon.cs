@@ -20,6 +20,7 @@ public partial class level_icon : Control
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		// Displays the correct level index next to levels
 		if (Engine.IsEditorHint()) {
 			_LevelLabel.Text = "Level " + level_index;
 		}

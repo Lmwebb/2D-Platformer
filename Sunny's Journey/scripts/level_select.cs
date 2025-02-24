@@ -17,7 +17,7 @@ public partial class level_select : Control
 		levels = new List<Node>();
 		_PlayerIcon = GetNode<TextureRect>("PlayerIcon");
 		
-		
+		// Ensures the required node type is assigned
 		foreach (Node child in GetChildren()) {
 			if (!(child is TextureRect)) {
 				levels.Add(child);
@@ -25,12 +25,13 @@ public partial class level_select : Control
 			}
 		}
 		
+		// Places the player icon at the current level selected
 		_PlayerIcon.GlobalPosition = ((Control)levels[current_level]).GlobalPosition;
 	}
 	
 	public void _input(InputEvent @event) {
 		
-		
+		// Moves the player between levels
 		if (Input.IsActionPressed("ui_left") && current_level > 0) {
 			current_level -= 1;
 			_PlayerIcon.GlobalPosition = ((Control)levels[current_level]).GlobalPosition;
@@ -41,10 +42,12 @@ public partial class level_select : Control
 			_PlayerIcon.GlobalPosition = ((Control)levels[current_level]).GlobalPosition;
 		}
 		
+		// Returns to world select scene
 		if (Input.IsActionPressed("ui_cancel")) {
 			GetTree().ChangeSceneToFile("res://scene/world_select/world_select.tscn");
 		}
 		
+		// Access the chosen level
 		if (Input.IsActionPressed("ui_enter")) {
 			if (current_level == 1) {
 				GetTree().ChangeSceneToFile("res://scene/game.tscn");
