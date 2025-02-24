@@ -3695,7 +3695,7 @@ libraries = {
 autoplay = "move"
 
 [node name="Platform" parent="Platforms" instance=ExtResource("7_0vsho")]
-position = Vector2(816, -65)
+position = Vector2(1104, -72)
 
 [node name="Platform5" parent="Platforms" instance=ExtResource("7_0vsho")]
 position = Vector2(629, -11)

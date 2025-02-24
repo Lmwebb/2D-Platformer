@@ -13,8 +13,8 @@ public partial class player : CharacterBody2D
 	
 	private AnimatedSprite2D animatedSprite;
 	private AudioStreamPlayer jumpEffect;
-	private fruit Fruit;
 	private Node fruitNode;
+	
 	
 	public override void _Ready()
 	{
@@ -22,14 +22,21 @@ public partial class player : CharacterBody2D
 		// Get the AnimatedSprite2D node
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		jumpEffect = GetNode<AudioStreamPlayer>("jumpSound");
-		Node fruitNode = GetNode<Node>("/root/Level2/Fruits");
 		
+		Node fruitNode = GetTree().CurrentScene.GetNode<Node>("Fruits");
+		
+		if (fruitNode == null) {
+			GD.Print("FruitNode is null");
+		}
+		
+		GD.Print(GetTree().CurrentScene.Name);
 		
 		foreach (Node child in fruitNode.GetChildren()) {
 			if (child is fruit fruitInstance) {
 				fruitInstance.FruitCollected += OnFruitCollected;
 			}
 		}
+
 		
 	}
 	

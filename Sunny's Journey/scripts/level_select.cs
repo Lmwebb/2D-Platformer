@@ -52,6 +52,10 @@ public partial class level_select : Control
 			if (current_level == 2) {
 				GetTree().ChangeSceneToFile("res://scene/levels/level_2.tscn");
 			}
+			
+			if (current_level == 3) {
+				GetTree().ChangeSceneToFile("res://scene/levels/level_3.tscn");
+			}
 		}
 		
 	}
