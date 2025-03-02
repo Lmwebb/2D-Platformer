@@ -1,4 +1,4 @@
-# **Lmwebb**
+# **Sunny's Journey**
 > 2D Platformer Game
 
 2D Platformer developed using Godot in C#
