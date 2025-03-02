@@ -2268,7 +2268,7 @@ offset_right = -242.0
 offset_bottom = 18.0
 theme_override_fonts/font = ExtResource("15_uvrcr")
 theme_override_font_sizes/font_size = 8
-text = "It respawn I hope..."
+text = "It respawns I hope..."
 
 [node name="Label8" type="Label" parent="Labels"]
 offset_left = -440.0

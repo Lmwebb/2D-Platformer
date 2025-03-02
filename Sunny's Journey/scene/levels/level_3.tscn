@@ -1779,6 +1779,21 @@ _data = {
 "RESET": SubResource("Animation_gt38a")
 }
 
+[sub_resource type="Animation" id="Animation_y8ob1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-672, -344)]
+}
+
 [sub_resource type="Animation" id="Animation_8jll4"]
 resource_name = "Up"
 length = 3.0
@@ -1796,7 +1811,13 @@ tracks/0/keys = {
 "values": [Vector2(-672, -376), Vector2(-672, -472)]
 }
 
-[sub_resource type="Animation" id="Animation_y8ob1"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yq1ou"]
+_data = {
+"RESET": SubResource("Animation_y8ob1"),
+"Up": SubResource("Animation_8jll4")
+}
+
+[sub_resource type="Animation" id="Animation_glcc6"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -1808,13 +1829,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-672, -344)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_yq1ou"]
-_data = {
-"RESET": SubResource("Animation_y8ob1"),
-"Up": SubResource("Animation_8jll4")
+"values": [Vector2(-624, -512)]
 }
 
 [sub_resource type="Animation" id="Animation_qpcb0"]
@@ -1832,21 +1847,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(-624, -512), Vector2(-464, -512)]
-}
-
-[sub_resource type="Animation" id="Animation_glcc6"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-624, -512)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0kg1l"]
