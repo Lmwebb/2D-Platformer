@@ -1,10 +1,7 @@
-**Lmwebb**
-
-----------------------------
-
-> **2D Platformer Game**
+# **Lmwebb**
+> 2D Platformer Game
 
 2D Platformer developed using Godot in C#
 
-> How to play
+### How to play
 > Insert Website
