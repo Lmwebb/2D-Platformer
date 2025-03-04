@@ -15,6 +15,6 @@
 > 
 
 #### Video
-> A run through of the game
+> A run-through of the game
 > 
 > [Video](https://youtu.be/Nxl5Qixrh4E)
