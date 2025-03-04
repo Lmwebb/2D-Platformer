@@ -3,6 +3,8 @@
 
 2D Platformer developed using Godot in C#
 
+Built using Godot 4.2.2 Stable
+
 ### How to play
 > Download is only Windows compatible 
 > https://lmwebb.itch.io/sunnys-journey
