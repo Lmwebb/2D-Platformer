@@ -9,12 +9,12 @@
 > 
 > Step 1: Access the game through the above itch.io link
 > 
-> Step 2: Enter password to access file: 123
+> Step 2: Enter password to access the file: 123
 > 
-> Step 3: Download, unzip and run the application
+> Step 3: Download, unzip and run the application to play
 > 
 
 #### Video
-> A run-through of the game
+> A video run-through of the game
 > 
 > [Video](https://youtu.be/Nxl5Qixrh4E)
