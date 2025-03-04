@@ -3,12 +3,12 @@
 [ext_resource type="Script" path="res://world_select.cs" id="1_v77u6"]
 [ext_resource type="PackedScene" uid="uid://dd4c1jhbhmtdp" path="res://scene/world_select/world_icon.tscn" id="2_lnhvy"]
 [ext_resource type="PackedScene" uid="uid://rruecwmnwhqa" path="res://scene/world_select/player_icon.tscn" id="3_d0q2y"]
-[ext_resource type="Texture2D" uid="uid://ctp8m6seitc48" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/spring_.png" id="3_j7gft"]
-[ext_resource type="Texture2D" uid="uid://dtnf7ywyi8mqa" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/background_/sky_.png" id="4_4ery0"]
-[ext_resource type="Texture2D" uid="uid://dvkr0vwhrcs3d" path="res://assets/brackeys_platformer_assets (1)/brackeys_platformer_assets/sprites/world_tileset.png" id="4_8cmk3"]
-[ext_resource type="Texture2D" uid="uid://c8l67q35gid5r" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/staticObjects_.png" id="5_u7k3s"]
-[ext_resource type="Texture2D" uid="uid://b37f8ancra6bs" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/autumn_.png" id="6_0va56"]
-[ext_resource type="Texture2D" uid="uid://c73apcwxl0ncy" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/winter_.png" id="7_ria78"]
+[ext_resource type="Texture2D" uid="uid://c2qilnp1oihl1" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/spring_.png" id="3_j7gft"]
+[ext_resource type="Texture2D" uid="uid://dfo5j5wi4anbt" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/background_/sky_.png" id="4_4ery0"]
+[ext_resource type="Texture2D" uid="uid://qgcmvai7v6hb" path="res://assets/brackeys_platformer_assets (1)/brackeys_platformer_assets/sprites/world_tileset.png" id="4_8cmk3"]
+[ext_resource type="Texture2D" uid="uid://55xtm7qstnme" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/staticObjects_.png" id="5_u7k3s"]
+[ext_resource type="Texture2D" uid="uid://5f1k3kbn711k" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/autumn_.png" id="6_0va56"]
+[ext_resource type="Texture2D" uid="uid://ds5dayh2n5yxu" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/winter_.png" id="7_ria78"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jww7f"]
 texture = ExtResource("4_4ery0")

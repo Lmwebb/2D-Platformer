@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bnpxq8mb3rux2"]
 
 [ext_resource type="Script" path="res://scripts/place_holder.cs" id="1_6iook"]
-[ext_resource type="Texture2D" uid="uid://ctp8m6seitc48" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/spring_.png" id="1_g3wan"]
+[ext_resource type="Texture2D" uid="uid://c2qilnp1oihl1" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/spring_.png" id="1_g3wan"]
 [ext_resource type="FontFile" uid="uid://c04tbpxcd4lea" path="res://assets/brackeys_platformer_assets (1)/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="2_63x6c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_frei7"]

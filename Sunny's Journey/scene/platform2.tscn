@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://p1in132dctrj"]
 
-[ext_resource type="Texture2D" uid="uid://ctp8m6seitc48" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/spring_.png" id="1_balg6"]
+[ext_resource type="Texture2D" uid="uid://c2qilnp1oihl1" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/midground_/spring_.png" id="1_balg6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qe3r6"]
 size = Vector2(32, 8)

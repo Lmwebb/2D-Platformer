@@ -1,8 +1,8 @@
 [gd_scene load_steps=21 format=3 uid="uid://cs5hrifebhbmx"]
 
-[ext_resource type="Texture2D" uid="uid://bv2jpncovpw1k" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/coin_.png" id="1_jro17"]
+[ext_resource type="Texture2D" uid="uid://cvujm2dco054f" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/coin_.png" id="1_jro17"]
 [ext_resource type="Script" path="res://scripts/coin.cs" id="1_ykch5"]
-[ext_resource type="AudioStream" uid="uid://clm1k0re0451x" path="res://assets/brackeys_platformer_assets (1)/brackeys_platformer_assets/sounds/coin.wav" id="3_4l1w6"]
+[ext_resource type="AudioStream" uid="uid://b52h4imthk5wq" path="res://assets/brackeys_platformer_assets (1)/brackeys_platformer_assets/sounds/coin.wav" id="3_4l1w6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mmu2f"]
 atlas = ExtResource("1_jro17")

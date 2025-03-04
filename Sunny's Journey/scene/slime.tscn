@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/slime.cs" id="1_rrcny"]
 [ext_resource type="PackedScene" uid="uid://dvtv80v66cbj8" path="res://scene/killzone.tscn" id="2_lc1gv"]
-[ext_resource type="Texture2D" uid="uid://dudncl77xkqu0" path="res://assets/brackeys_platformer_assets (1)/brackeys_platformer_assets/sprites/slime_purple.png" id="2_mdgl7"]
+[ext_resource type="Texture2D" uid="uid://dgnpx0d7jbnqa" path="res://assets/brackeys_platformer_assets (1)/brackeys_platformer_assets/sprites/slime_purple.png" id="2_mdgl7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1h53k"]
 atlas = ExtResource("2_mdgl7")

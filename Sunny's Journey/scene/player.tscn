@@ -1,8 +1,8 @@
 [gd_scene load_steps=31 format=3 uid="uid://dlnktxsg313h3"]
 
 [ext_resource type="Script" path="res://scripts/player.cs" id="1_n60wh"]
-[ext_resource type="Texture2D" uid="uid://7q8b0635ui82" path="res://assets/camelot_ [version 1.0]/lancelot_.png" id="1_t17r0"]
-[ext_resource type="AudioStream" uid="uid://cvstv5cgnwfhl" path="res://assets/features/sounds/jump.wav" id="3_p1178"]
+[ext_resource type="Texture2D" uid="uid://d14nkk3yn1vry" path="res://assets/camelot_ [version 1.0]/lancelot_.png" id="1_t17r0"]
+[ext_resource type="AudioStream" uid="uid://vn308jyc7fqx" path="res://assets/features/sounds/jump.wav" id="3_p1178"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_641od"]
 atlas = ExtResource("1_t17r0")
