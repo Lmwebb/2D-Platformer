@@ -5,7 +5,7 @@
 
 ### How to play
 > Download is only Windows compatible 
-> [Sunny's Journey](https://lmwebb.itch.io/sunnys-journey)
+> https://lmwebb.itch.io/sunnys-journey
 > 
 > Step 1: Access the game through the above itch.io link
 > 
@@ -17,4 +17,4 @@
 #### Video
 > A video run-through of the game
 > 
-> [Video](https://youtu.be/Nxl5Qixrh4E)
+> https://youtu.be/Nxl5Qixrh4E
