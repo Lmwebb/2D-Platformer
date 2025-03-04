@@ -4,6 +4,7 @@
 2D Platformer developed using Godot in C#
 
 ### How to play
+> Download is only Windows compatible 
 > [Sunny's Journey](https://lmwebb.itch.io/sunnys-journey)
 > 
 > Step 1: Access the game through the above itch.io link
@@ -14,5 +15,6 @@
 > 
 
 #### Video
-> Video of game being played
-> insert youtube link
+> A run through of the game
+> 
+> [Video](https://youtu.be/Nxl5Qixrh4E)
